@@ -1,5 +1,5 @@
-const fileRankToSquare = require('../src/utils/boardUtils')
-const {FILES_ENUM, RANKS_ENUM} = require("../src/constants");
+import {fileRankToSquare} from "../src/utils/boardUtils.js";
+import {FILES_ENUM, RANKS_ENUM} from '../src/constants.js'
 
 describe('fileRankToSquare', () => {
     test('returns the correct square index for valid file and rank', () => {

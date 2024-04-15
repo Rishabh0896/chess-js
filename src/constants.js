@@ -1,4 +1,4 @@
-const PIECES_TYPES = {
+const PIECE_TYPES = {
     EMPTY: 0, wP: 1, wN: 2, wB: 3, wR: 4, wQ: 5, wK: 6, bP: 7, bN: 8, bB: 9, bR: 10, bQ: 11, bK: 12
 };
 
@@ -36,11 +36,4 @@ const BOARD_SQUARES = {
     NO_SQ: 99, OFF_BOARD: 100
 };
 
-module.exports = {
-    PIECES_TYPES,
-    BOARD_SIZE,
-    FILES_ENUM,
-    RANKS_ENUM,
-    PIECE_COLOURS,
-    BOARD_SQUARES
-};
+export {PIECE_TYPES, BOARD_SIZE, FILES_ENUM, RANKS_ENUM, PIECE_COLOURS, BOARD_SQUARES}
