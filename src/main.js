@@ -1,4 +1,5 @@
 import {BOARD_SIZE, BOARD_SQUARES, FILES_ENUM, RANKS_ENUM} from './constants.js';
+import {fileRankToSquare} from "./utils/boardUtils.js";
 
 let file_board = new Array(BOARD_SIZE);
 let rank_board = new Array(BOARD_SIZE);
@@ -10,6 +11,7 @@ $(function () {
 
 function init() {
     console.log("init() called");
+    initFileRankBoard()
 }
 
 function initFileRankBoard() {
@@ -25,4 +27,6 @@ function initFileRankBoard() {
             rank_board[sq] = rank;
         }
     }
+    console.log("file_board[0]:" + file_board[0] + "rank_board[0]" + rank_board[0]);
+    console.log("file_board[BOARD_SQUARES.A1]:" + file_board[BOARD_SQUARES.A1] + "rank_board[BOARD_SQUARES.A1]" + rank_board[BOARD_SQUARES.A1]);
 }
